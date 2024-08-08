@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout de Três Colunas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .coluna {
+            flex: 1; /* As colunas terão largura igual */
+            margin: 10px; /* Espaçamento entre as colunas */
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            min-width: 200px; /* Largura mínima para responsividade */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="coluna">Coluna 1</div>
+        <div class="coluna">Coluna 2</div>
+        <div class="coluna">Coluna 3</div>
+    </div>
+</body>
+</html>

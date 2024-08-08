@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            width: 80%; /* Largura do container */
+            background-color: #00ffbf;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .item {
+            background-color: #ffffff;
+            color: #333;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            flex: 1 1 100px; 
+        }
+
+        
+        .item1 { order: 2; }
+        .item2 { order: 4; }
+        .item3 { order: 1; }
+        .item4 { order: 3; }
+        .item5 { order: 5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+    </div>
+</body>
+</html>

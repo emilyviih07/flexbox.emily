@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Complexo com Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;  
+            margin: 0;
+        }
+
+        header, footer {
+            background-color: #ff00d4;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-grow: 1; 
+        }
+
+        .sidebar {
+            background-color: #f4f4f4;
+            width: 200px; 
+        }
+
+        .menu {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+
+        .menu a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .content {
+            flex-grow: 1; 
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>Cabeçalho</header>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Conteúdo Principal</h2>
+            <p>Este é o conteúdo principal da página.</p>
+        </div>
+    </div>
+
+    <footer>Rodapé</footer>
+</body>
+</html>

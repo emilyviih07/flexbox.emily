@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuição de Espaço</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Centraliza o container na tela */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between; /* Distribui os itens com espaço igual */
+            align-items: center; /* Alinha os itens verticalmente no centro */
+            background-color: #7700ff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%; /* Largura do container */
+        }
+
+        .item {
+            background-color: #ffffff;
+            color: #333;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .item1, .item2, .item3, .item4 {
+            flex: 1; /* Distribui o espaço igualmente entre os quatro itens */
+        }
+
+        .item5 {
+            flex: 2; /* O último item ocupa o espaço restante */
+            background-color: #2831a7;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+    </div>
+</body>
+</html>
